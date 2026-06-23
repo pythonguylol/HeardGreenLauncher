@@ -1,0 +1,11 @@
+bin/
+obj/
+.vs/
+.vscode/
+*.user
+*.swp
+*.swo
+*~
+.DS_Store
+out/
+launcher.zip
