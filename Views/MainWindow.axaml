@@ -1,0 +1,25 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="HeardGreenLauncher.Views.MainWindow"
+        Title="HeardGreen SMP Launcher"
+        Width="800"
+        Height="600"
+        CanResize="False">
+    <StackPanel Margin="20" Spacing="15">
+        <TextBlock Text="HeardGreen SMP Launcher" FontSize="24" FontWeight="Bold" />
+        
+        <StackPanel Spacing="5">
+            <TextBlock Text="Select Minecraft Version:" />
+            <ComboBox x:Name="VersionComboBox" Width="300" />
+        </StackPanel>
+        
+        <StackPanel Spacing="5">
+            <TextBlock Text="Java Memory (GB):" />
+            <Slider x:Name="MemorySlider" Minimum="1" Maximum="8" Width="300" />
+            <TextBlock x:Name="MemoryLabel" Text="1 GB" />
+        </StackPanel>
+        
+        <Button Content="Launch Game" Width="200" />
+        <TextBlock x:Name="StatusText" Text="Ready to launch" Foreground="Green" />
+    </StackPanel>
+</Window>
